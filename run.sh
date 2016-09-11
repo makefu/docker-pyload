@@ -13,4 +13,4 @@ then
         rm /opt/pyload/pyload-config/pyload.pid
 fi
 
-exec /opt/pyload/pyLoadCore.py
+exec /opt/pyload/pyLoadCore.py -d
