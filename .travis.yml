@@ -6,8 +6,11 @@ services:
   - docker
 
 before_install:
-  - gem install serverspec
-  - gem install docker-api
+  #- gem install serverspec
+  #- gem install docker-api
 
 script:
-  - rspec Dockerfile_spec.rb
+  #- rspec Dockerfile_spec.rb
+  - sudo docker build -t pyload .
+  # TODO: rspec surely is much cooler than this
+  - sudo sh ./test-docker.sh

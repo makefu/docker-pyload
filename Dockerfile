@@ -29,7 +29,7 @@ RUN git clone https://github.com/makefu/pyload.git /opt/pyload -b xdcc-rewrite  
         && cd /opt/pyload \
         && echo "/opt/pyload/pyload-config" > /opt/pyload/module/config/configdir
 
-ADD pyload-config/ /tmp/pyload-config
+ADD test/pyload-config/ /tmp/pyload-config
 ADD run.sh /run.sh
 RUN chmod +x /run.sh
 
