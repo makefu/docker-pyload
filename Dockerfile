@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y python \
 
 RUN git clone https://github.com/makefu/pyload.git /opt/pyload -b xdcc-rewrite --depth 50 \
         && cd /opt/pyload \
-        && git reset --hard 24c09f64dd2df0689e344132111e399044cca856 \
+        && git reset --hard 9d6136549df114452d5e24d3a929478fd8be6f20 \
         && echo "/opt/pyload/pyload-config" > /opt/pyload/module/config/configdir
 
 ADD test/pyload-config/ /tmp/pyload-config
